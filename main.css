@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.box {
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    animation: move 4s linear infinite 0s;
+}
+
+@keyframes move {
+
+    25% {
+        position: absolute;
+        right: 0;
+    }
+
+    50% {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    75% {
+        position: absolute;
+        left: 0;
+        bottom: 0;    
+    }
+
+    100% {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
